@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   text-align: center;
 }
@@ -120,9 +119,10 @@ h1 {
 
 .button-animation-list button#button8 {
   box-shadow: 0 5px black;
+  background: mediumseagreen;
 }
 
-.button-animation-list button#button8hover {
-  　box-shadow: none;
-  　transform: translate(0, 5px);
+.button-animation-list button#button8:hover{
+  box-shadow: none;
+  background: mediumseagreen;
 }
