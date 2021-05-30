@@ -1,0 +1,68 @@
+body{
+    text-align: center;
+}
+h1{
+    color: #13c3ac;
+}
+
+
+.button-animation-list button.button{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #333;
+    padding: 18px 30px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.button-animation-list button#button1:hover{
+    background: #13c3ac;
+}
+
+.button-animation-list button#button2:hover{
+    opacity: 0.6;
+}
+.button-animation-list button#button3:hover{
+    transform: scale(1.2);
+}
+
+.button-animation-list button#button4:hover{
+    animation: pulsation .7s alternate infinite;
+}
+
+@keyframes pulsation {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1.1); }
+}
+
+.button-animation-list button#button5:hover{
+    letter-spacing: 5px;
+}
+
+
+
+.button-animation-list button#button6{
+    position: relative;
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 22px;
+    -webkit-transition: none;
+    transition: none;
+    box-shadow: 0 3px 0 #333;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+
+
+
+.button-animation-list button#button6:hover {
+    top: -4px;
+    box-shadow: 0 7px 0 transparent;
+  }
+  .button-animation-list button#button6:active{
+    top: 3px;
+    box-shadow: none;
+  }
+
