@@ -1,5 +1,6 @@
 body{
     text-align: center;
+
 }
 h1{
     color: #13c3ac;
@@ -70,8 +71,7 @@ box-shadow: none;
 
 .button-animation-list button#button7{
     cursor: pointer;
-    text-transform: uppercase;
-
+    text-transform: uppercase
 }
 .button-animation-list button#button7:hover{ 
     animation: rotate 0.7s ease-in-out both;
@@ -114,3 +114,8 @@ box-shadow: none;
       transform: translate3d(0, 0, 0) translateZ(0);
     }
   }
+
+.button-animation-list button#button8{
+    box-shadow:0 5px black;
+    background: mediumseagreen;
+}
