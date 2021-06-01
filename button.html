@@ -7,10 +7,25 @@
     <title>button-animation</title>
     <link rel="stylesheet" href="./animate.css">
     <link rel="stylesheet" href="./button.css">
+    <link rel="stylesheet" href="./animate.css">
 </head>
 <body>
     <h1>ボタンのアニメーション</h1>
    <div class="button-animation-list">
+       <h2>フェードインアップ</h2>
+       <button class="button wow fadeInUp infinite" >ボタン</button>
+       <h2>バウンド</h2>
+       <button class="button wow bounceIn infinite" >ボタン</button>
+       <h2>揺れるボタン</h2>
+       <button class="button wow shake infinite" >ボタン</button>
+       <h2>ロールイン</h2>
+       <button class="button wow rollIn infinite">ボタン</button>
+       <h2>スイング</h2>
+       <button class="button wow swing infinite">ボタン</button>
+       <h2>プラス</h2>
+       <button class="button wow pulse infinite">ボタン</button>
+       <h2>ジェロ</h2>
+       <button class="button wow jello infinite">ボタン</button>
        <h2>①ホバーすると背景色が変わるボタン</h2>
        <button class="button" id="button1">ボタン</button>
        <h2>②ホバーすると背景が透明になるボタン</h2>
@@ -34,9 +49,11 @@
    </div>
 
 
+
 <script src="./wow.min.js"></script>   
 <script>
     new WOW().init();
-  </script>
+</script>
+
 </body>
 </html>
