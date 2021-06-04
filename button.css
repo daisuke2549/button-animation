@@ -530,3 +530,7 @@ button p:active {
   color: #fff;
   border-bottom: 3px solid #26379c;
 }
+
+.sentence span#text-color{
+  background-color: red;
+}
