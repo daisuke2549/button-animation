@@ -177,7 +177,6 @@ button p:active {
 @media (min-width: 768px) {
   .news {
     margin: 120px auto 0;
-    /* max-width: 1200px; */
     padding: 0;
     width: 100%;
   }
@@ -358,4 +357,176 @@ button p:active {
   .news-itemTxt {
     margin: 8px 0 0 0;
   }
+}
+
+.button {
+  padding: 80px 0;
+}
+
+.button__item {
+  padding: 1em;
+}
+
+.button__item--black {
+  background: #333;
+}
+
+.button01 {
+  display: inline-block;
+  min-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  background: #ffaa3b;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.button02 {
+  display: inline-block;
+  min-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  background: #ffaa3b;
+  color: #fff;
+  border-radius: 3px;
+  position: relative;
+}
+
+.button02::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: transparent url(../img/icon-arrow-right.png) no-repeat center center/contain;
+}
+
+.button03 {
+  display: inline-block;
+  min-width: 830px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  background: #fff;
+  color: aqua;
+  border-radius: 30px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.button03::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  background: transparent url(./img/triangle-buttom.png) no-repeat center center/contain;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button04 {
+  display: inline-block;
+  min-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  border-radius: 3px;
+  background: #ffaa3b;
+  color: #fff;
+  box-shadow: 0 5px 0 #25379b;
+}
+
+.button05 {
+  display: inline-block;
+  min-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #3f51b5 0%, #20295b 100%);
+  color: #fff;
+}
+
+.button06 {
+  display: inline-block;
+  min-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.button07 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  background: #ffaa3b;
+  color: #fff;
+  overflow: hidden;
+  padding: 36px 16px;
+}
+
+.button08 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  border-radius: 115px;
+  min-width: 230px;
+  background: #ffaa3b;
+  color: #fff;
+  position: relative;
+}
+
+.button08::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: transparent url(../img/icon-arrow-right.png) no-repeat center center/contain;
+}
+
+.button09 {
+  display: inline-block;
+  min-width: 230px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  background: #ffaa3b;
+  color: #fff;
+  border-bottom: 3px solid #26379c;
 }
