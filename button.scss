@@ -534,3 +534,91 @@ button p:active {
 	color: #fff;
 	border-bottom: 3px solid #26379c;
 }
+
+
+// -----
+// カード
+// -----
+.card {
+	background: #efefef;
+}
+
+.card__inner {
+}
+
+.card__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 56px;
+
+	@include mq('sp') {
+		margin-top: 30px;
+	}
+}
+
+.card__item {
+	width: calc(33.33333333% - 24px * 2 / 3);
+	margin-right: 24px;
+	margin-top: 24px;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	@include mq('tab') {
+		width: calc(50% - 24px / 2);
+		margin-right: 24px;
+
+		&:nth-child(3n) {
+			margin-right: 24px;
+		}
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include mq('sp') {
+		width: 100%;
+		margin-right: 0;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+}
+
+.media {
+	overflow: hidden;
+	background: #fff;
+	border-radius: 4px;
+	padding: 16px 16px 14px;
+	display: block;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.media__img {
+	text-align: center;
+
+	img {
+		vertical-align: bottom;
+	}
+}
+
+.media__body {
+	margin-top: 12px;
+}
+
+.media__title {
+	font-weight: 700;
+	font-size: 20px;
+	color: #6f7579;
+}
+
+.media__content {
+	font-weight: 700;
+	color: #6f7579;
+	margin-top: 4px;
+	line-height: (24 / 16);
+}
