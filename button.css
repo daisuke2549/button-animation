@@ -651,3 +651,43 @@ button p:active {
   margin-top: 4px;
   line-height: 1.5;
 }
+.figure{
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
+
+.triangle3{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid black;
+  margin: 0 auto;
+}
+.arrow{
+  display: inline-block;
+  min-width: 530px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 16px;
+  background: #ffaa3b;
+  color: #fff;
+  border-radius: 3px;
+  position: relative;
+  background-color: pink;
+}
+.arrow::after{
+  content: "";
+  width: 0;
+  display: inline-block;
+  height: 0;
+  position: absolute;
+  top: 44%;
+  right: 10px;
+  vertical-align: middle;
+  border: 6px solid transparent;
+  border-top: 10px solid #555;   /* 好みで色を変えてください */  
+}
