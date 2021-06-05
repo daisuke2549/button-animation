@@ -529,6 +529,42 @@ button p:active {
   color: #fff;
   border-bottom: 3px solid #26379c;
 }
+.button11 {
+  border-bottom: 7px solid #006c65;
+  background-color: #03c6b9;
+  color: #fff;
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+.button11:hover {
+  border-bottom: 0px solid #006c65;
+  margin-top: 7px;
+}
+
+.button12{
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  background-color: #03c6b9;
+  color: #fff;
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+.button12:hover {
+  box-shadow: 0 9px 8px -4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+}
+
+
 .card {
   background: #efefef;
 }
