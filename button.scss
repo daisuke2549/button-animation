@@ -1,6 +1,7 @@
 body{
     text-align: center;
     margin:0;
+	max-width: 100% !important;
 }
 @charset "UTF-8";
 
@@ -622,3 +623,93 @@ button p:active {
 	margin-top: 4px;
 	line-height: (24 / 16);
 }
+
+// .button100{
+
+// img{
+// 	max-width: none;
+// 	overflow-x: scroll;
+// 	height:300px;
+// 	width:700px;
+// }
+// }
+
+
+
+HTML CSSResult Skip Results Iframe
+EDIT ON
+/*===========
+.scroll-box
+===========*/
+.scroll-box {
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-box div img {
+  max-width: 100%;
+  min-width: 600px;
+  vertical-align: top;
+}
+
+/*===========
+scrollbar
+===========*/
+/*スクロールバー全体の高さ*/
+.scroll-box::-webkit-scrollbar {
+  height: 4px;
+}
+/*スクロールバー全体の背景*/
+.scroll-box::-webkit-scrollbar-track {
+  background: #eee;
+}
+/*スクロールバーの動く部分*/
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border: none;
+}
+/*スクロールバーの動く部分のホバー（マウスオーバー）*/
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/*===========
+common
+===========*/
+body {
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+section p._a {
+  padding: 0 10px;
+  margin: 50px 0 0;
+}
+section p._a .link {
+  display: inline-block;
+  color: #111;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+section p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #111;
+  border-right: 2px solid #111;
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+
+
+Resources1× 0.5× 0.25×Rerun

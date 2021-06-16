@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="./button.css">
+<style>
+HTML CSSResult Skip Results Iframe
+EDIT ON
+/*===========
+.scroll-box
+===========*/
+.scroll-box {
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*===========
+scrollbar
+===========*/
+/*スクロールバー全体の高さ*/
+.scroll-box::-webkit-scrollbar {
+  height: 4px;
+}
+/*スクロールバー全体の背景*/
+.scroll-box::-webkit-scrollbar-track {
+  background: #eee;
+}
+/*スクロールバーの動く部分*/
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border: none;
+}
+/*スクロールバーの動く部分のホバー（マウスオーバー）*/
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/*===========
+.f_area
+===========*/
+.scroll-box .f_area {
+  display: flex;
+  justify-content: center;
+}
+.scroll-box .f_area .f_one {
+  width: 33.333%;
+}
+.scroll-box .f_area .f_one a {
+  display: block;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.scroll-box .f_area .f_one a img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  transform: scale(1);
+  transition: .5s;
+}
+.scroll-box .f_area .f_one a img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) {
+  .scroll-box {
+    overflow-x: auto;
+  }
+  .scroll-box .f_area {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 0 0 15px;
+  }
+  .scroll-box .f_area .f_one {
+    flex: 0 0 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scroll-box .f_area .f_one {
+    flex: 0 0 80%;
+  }
+}
+
+/*===========
+common
+===========*/
+body {
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 50px 0;
+}
+section p._a {
+  padding: 0;
+  margin: 50px 0 0;
+}
+section p._a .link {
+  display: inline-block;
+  color: #111;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+section p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #111;
+  border-right: 2px solid #111;
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+
+
+Resources1× 0.5× 0.25×Rerun
+</style>
+
+
+</head>
+<body>
+<!-- <div class="container">
+    <!-- <div class="button100" style="margin-top:30px ">
+        <img src="./img/test-image.jpeg" alt="">
+      </div> -->
+      <div class="scroll-box style="margin-top:100px ">
+        <div><img src="./img/test-image.jpeg" alt=""></div>
+      </div>
+      <div class="testtext">
+          テストテストテストテスト
+      </div>
+<!-- </div>  -->
+
+<section>
+
+  <div class="scroll-box">
+    <div class="f_area">
+      <div class="f_one">
+        <a href="https://125naroom.com/web/3510" target="_blank"><img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" alt=""></a>
+      </div>
+      <div class="f_one">
+        <a href="https://125naroom.com/web/3510" target="_blank"><img src="https://125naroom.com/demo/img/itukanokotonokoto02.jpg" alt=""></a>
+      </div>
+      <div class="f_one">
+        <a href="https://125naroom.com/web/3510" target="_blank"><img src="https://125naroom.com/demo/img/itukanokotonokoto03.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="_a"><a href="https://125naroom.com/web/3510" target="_blank" class="link">View the note</a></p>
+</section>
+
+
+
+Resources1× 0.5× 0.25×Rerun
+</body>
+</html>

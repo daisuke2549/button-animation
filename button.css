@@ -1,6 +1,7 @@
 body {
   text-align: center;
   margin: 0;
+  max-width: 100% !important;
 }
 
 h1 {
@@ -529,58 +530,15 @@ button p:active {
   color: #fff;
   border-bottom: 3px solid #26379c;
 }
-.button11 {
-  border-bottom: 7px solid #006c65;
-  background-color: #03c6b9;
-  color: #fff;
-  display: inline-block;
-  padding: 0.6em 2em;
-  margin: 0;
-  cursor: pointer;
-  border-radius: 24px;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-}
-.button11:hover {
-  border-bottom: 0px solid #006c65;
-  margin-top: 7px;
-}
-
-.button12{
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-  background-color: #03c6b9;
-  color: #fff;
-  display: inline-block;
-  padding: 0.6em 2em;
-  margin: 0 0 1em;
-  cursor: pointer;
-  border-radius: 24px;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-}
-.button12:hover {
-  box-shadow: 0 9px 8px -4px rgba(0, 0, 0, 0.25);
-  transform: translateY(-7px);
-  -webkit-transform: translateY(-7px);
-}
-
 
 .card {
   background: #efefef;
 }
-.card__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 56px;
-}
 
-@media (max-width: 767px) {
-  .card__items {
-    margin-top: 30px;
-  }
+.card__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 56px;
 }
 
 .card__item {
@@ -593,29 +551,6 @@ button p:active {
   margin-right: 0;
 }
 
-@media (max-width: 1247px) {
-  .card__item {
-    width: calc(50% - 24px / 2);
-    margin-right: 24px;
-  }
-  .card__item:nth-child(3n) {
-    margin-right: 24px;
-  }
-  .card__item:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .card__item {
-    width: 100%;
-    margin-right: 0;
-  }
-  .card__item:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
 .media {
   overflow: hidden;
   background: #fff;
@@ -623,7 +558,6 @@ button p:active {
   padding: 16px 16px 14px;
   display: block;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -650,44 +584,4 @@ button p:active {
   color: #6f7579;
   margin-top: 4px;
   line-height: 1.5;
-}
-.figure{
-  margin-top: 50px;
-  margin-bottom: 110px;
-}
-
-
-.triangle3{
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid black;
-  margin: 0 auto;
-}
-.arrow{
-  display: inline-block;
-  min-width: 530px;
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
-  margin: 0;
-  padding: 15px 16px;
-  background: #ffaa3b;
-  color: #fff;
-  border-radius: 3px;
-  position: relative;
-  background-color: pink;
-}
-.arrow::after{
-  content: "";
-  width: 0;
-  display: inline-block;
-  height: 0;
-  position: absolute;
-  top: 44%;
-  right: 10px;
-  vertical-align: middle;
-  border: 6px solid transparent;
-  border-top: 10px solid #555;   /* 好みで色を変えてください */  
 }
